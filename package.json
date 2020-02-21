@@ -1,0 +1,64 @@
+{
+  "name": "kickapoo",
+  "version": "0.0.0-development",
+  "description": "Drum Machine App",
+  "productName": "Kickapoo App",
+  "cordovaId": "com.coldmountainentertainment.kickapoo.app",
+  "capacitorId": "",
+  "author": "jajav33 <to.jajav33@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build": "npx quasar build",
+    "build:tsc": "npx tsc -p ./src-ts/",
+    "commit": "npx git-cz",
+    "dev": "npx quasar dev",
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "@types/node": "^13.7.4",
+    "axios": "^0.18.1",
+    "quasar": "^1.0.0",
+    "typescript": "^3.8.2",
+    "vue-i18n": "^8.0.0"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.0.0",
+    "@quasar/cli": "^1.0.5",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-vue": "^6.1.2",
+    "mocha": "^7.0.1",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.0.4",
+    "semantic-release-cli": "^5.2.3",
+    "verdaccio": "^4.4.3"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ],
+  "resolutions": {
+    "@babel/parser": "7.7.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/to-jajav33/kickapoo.git"
+  }
+}
